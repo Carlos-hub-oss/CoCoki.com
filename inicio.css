@@ -1,0 +1,259 @@
+/*Para el body*/
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(255, 241, 225);
+}
+
+body > *:not(footer) {
+    flex: 1; 
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "Open sans";
+    color: rgb(113, 96, 73);
+    line-height: 1.6;
+    box-sizing: border-box;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
+    text-align: center;
+}
+
+/*Para el banner*/
+.banner {
+    color: rgb(76, 17, 17);
+    width: 100%;
+    height: 100px;
+    display: flex; 
+    align-items: right;
+    justify-content: left;
+    padding: 0; 
+    margin: 0;
+}
+
+.banner img {
+    height: 110px;
+    width: 110px;
+    filter:brightness(0.95);
+}
+
+.banner h1 {
+    align-items: center;
+    justify-content: center;
+    filter:brightness(0.95);
+    color: rgb(76, 17, 17);
+}
+
+.dividir {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; 
+}
+
+/*Para el menu*/
+.cosas {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu {
+    
+    align-items: center;
+    margin: 1;
+    gap: auto;
+    position: initial;
+    text-align: center;
+    height: 28px;
+}
+
+.menu a {
+    position: relative;
+
+    text-decoration: none;
+    font-family: "Open sans";
+    width: 100%;
+    height: 20px;
+    color: rgb(76, 17, 17);
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: rgb(255, 200, 181);
+    transition-duration: 0.7s;
+    zoom: 1.02;
+    font-size: 22px;
+}
+
+/*Lo principal de el inicio*/
+.principio h2 {
+    text-align: center;
+    color: rgb(76, 17, 17);
+    font-size: 30px;
+}
+
+.principio h3 {
+    text-align: center;
+    color: rgb(248, 74, 74);
+}
+
+.principio img {
+    width: 65%;
+    height: 500px;
+    box-shadow: 0 14px 25px rgb(44, 44, 44) 5px;
+    filter: brightness(0.85);
+    border-radius: 10px;
+}
+
+/*todo para el anuncio*/
+.cuadro {
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: cambiar-fondo 0.8s infinite;
+    font-family: "Open sans"; 
+}
+
+.texto-parpadeante {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffd000;
+    animation: parpadeo 1s infinite; 
+}
+
+@keyframes cambiar-fondo {
+    20% {
+        background-color: rgb(209, 120, 85);
+    }
+    40% {
+        background-color: #70d786db; 
+    }
+    60% {
+        background-color: rgb(209, 120, 85); 
+    }
+    80% {
+        background-color: #70d786db; 
+    }
+    100% {
+        background-color: rgb(209, 120, 85);
+    }
+}
+
+/*Para la seccion de comentarios*/
+.comentarios-clientes {
+    max-width: 60%;
+    max-height: 300px;
+    height: 90%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+.comentarios-clientes h2{
+    color:rgb(163, 125, 73);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+  .mover {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.logo-usuario img{
+    text-align: left;
+    width: 45px;
+    height: 45px;
+}
+
+.logo-usuario h2{
+    text-align: left;
+    width: 45px;
+    height: 45px;
+}
+
+  .comentario {
+    min-width: 97%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comentario p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: #9bfab0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: #3bf560d4;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+
+/*para el footer*/
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: black;
+    filter:brightness(0.95);
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    text-align: right;
+    filter:brightness(0.95);
+}
+
+/*para la transicion*/
+body {
+    opacity: 0;
+    animation: fadeIn 1.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        width: 0%;  
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Empresa</title>
+    <link rel="stylesheet" href="page 3.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="dividir">
+                <img src="Diseño_sin_título__5_-removebg-preview.png">
+                <h1><b>CoCoki</b></h1>         
+            </div>
+        </div>
+        <nav class="menu">
+        <div class="cosas"> 
+
+            <a href="Inicio.html">Inicio</a>
+            <a href="page 2.html">Registro</a>
+            <a href="page 4.html">Nosotros</a>
+            <a href="page 5.html">Contactenos</a>
+        </div>
+        </nav><br>
+        <h2>Snacks Saludables</h2>
+    </header>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="galleta-removebg-preview.png" alt="producto 1">
+                    </div>
+                    <p class="descripcion">Galleta</p>
+                    <span class="precio">$ 13</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="Sin_título__200_x_200_px___1_-removebg-preview.png" alt="producto 2">
+                    </div>
+                    <p class="descripcion">Jugo</p>
+                    <span class="precio">$ 18</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="Sin_título__200_x_200_px_-removebg-preview.png" alt="producto 3">
+                    </div>
+                    <p class="descripcion">Pan</p>
+                    <span class="precio">$ 30</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="Sin_título__200_x_200_px___2_-removebg-preview.png" alt="producto 4">
+                    </div>
+                    <p class="descripcion">Camoyeta</p>
+                    <span class="precio">$ 20</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="Diseño_sin_título-removebg-preview.png" alt="producto 5">
+                    </div>
+                    <p class="descripcion">Snack</p>
+                    <span class="precio">$ 15</span>
+                </div>
+               
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="Diseño_sin_título__1_-removebg-preview.png" alt="producto 6">
+                    </div>
+                    <p class="descripcion">Licuado</p>
+                    <span class="precio">$ 25</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="foto">
+                        <img src="Diseño_sin_título__2_-removebg-preview.png" alt="producto 7">
+                    </div>
+                    <p class="descripcion">Gelatina</p>
+                    <span class="precio">$ 10</span>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715;
+            </div>
+            <div class="info">
+                <img src="galleta-removebg-preview.png" alt="" id="img">
+                <h2 id="modelo">El producto</h2>
+                <p id="descripcion">Descripcion del producto</p>
+
+                <span class="precio" id="precio">Precio</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Cantidad</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <button id="agregar-carrito" onclick="agregarAlCarrito()">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <div class="info-cuadro">
+        <div class="info-texto">
+    <section class="carrito" id="carrito-section">
+        <img src="carro-de-la-carretilla.png"><h2>Carrito  </h2>
+        <div id="carrito-items"></div>
+        <b><p id="total">Total: $0.00</p></b>
+    </section>
+    </div>
+    </div>
+
+    <br>
+    <script src="page 3.js"></script>
+    <footer>
+        &copy; 2024 CoCoki. Todos los derechos reservados. 
+        <div class="logo">
+            <a href="https://es-la.facebook.com/login/device-based/regular/login/"><img src="icons8-facebook-48.png"></a> 
+            <a href="https://www.instagram.com/"><img src="icons8-instagram-48.png"></a> 
+            <a href="https://x.com/?lang=es&mx=2"><img src="X-removebg-preview.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
