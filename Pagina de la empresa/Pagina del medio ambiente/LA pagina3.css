@@ -1,0 +1,81 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rTch8ObZLaGFpe2TnPSJ2fhRpHR5dy-vuA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+button {
+    color:solid black;
+    background-color: aqua;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 8%;
+    height: 40px;
+}
+
+.button a {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+}
+
+.button :hover{
+    background-color: limegreen;
+}
+
+.body {
+    font-size: 30px;
+    color: black;
+}
+
+.image-container p{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px; 
+    width: 90%;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.image-container img {
+    width: 50%;
+    height: 280px;
+    gap: 10px;
+    text-align: right;
+    
+}
+
+img {
+    width:50%;
+    height:400px;
+    text-align: center;
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 3em;
+    width: 100%;
+    bottom: 0;
+    position: initial;
+}
+
+p {
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+b {
+    color: rgb(38, 175, 59)
+}

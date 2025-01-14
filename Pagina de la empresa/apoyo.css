@@ -1,0 +1,75 @@
+.comentarios-clientes {
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+.comentarios-clientes h2{
+    color:rgb(163, 125, 73);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+  .mover {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.logo-usuario img{
+    text-align: left;
+    width: 45px;
+    height: 45px;
+}
+
+.logo-usuario h2{
+    text-align: left;
+    width: 45px;
+    height: 45px;
+}
+
+  .comentario {
+    min-width: 97%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comentario p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: #9bfab0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: #3bf560d4;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
